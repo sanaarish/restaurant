@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        @import url('"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(dd.jpg);
+            background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+        section{
+            width: 96%;
+            height: 100%;
+            margin: 0px auto;
+            position: relative;
+        }
+        nav{
+            width: 96%;
+            height: 70px;
+            font-family: sans-serif;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+            background-color:#fff;
+        }
+        
+        
+        nav h1{
+            font-size: 50px;
+            width: 40%;
+            font-weight: bold;
+            color: white;
+            background-color: #AB92B0;
+        }
+        nav ul{
+            width: 60%;
+        }
+        nav ul li{
+            list-style: none;
+            float: left;
+            margin: 10px 20px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        nav ul li:hover{
+            transition: all 0.1 ease;
+        cursor: pointer;
+        transform: scale(1.1);
+        }
+        
+        nav ul li a,nav ul li a .fa{
+            text-decoration: none;
+            color: #8A848C ;
+           
+        }
+        .plan{
+            width:80%;
+            height: 250px;
+            padding: #ffffff40;
+            text-align: center;
+            margin: 10px auto;
+            margin-top: 300px;
+        }
+        .plan .plann{
+            width: 90%;
+            padding: 50px 20px;
+            background: #AB92B0;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .plan h2{
+            background: white;
+            color: #4B3E4F  ;
+            width: 200px;
+            margin-left: 40%;
+            padding: 20px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .plan .plann input{
+            font-size: 15px;
+            width: 186px;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 20px 10px;
+            background: #f1f1f1;
+            border: none;
+            outline: none;
+        }
+        .image{
+            height:20%;
+    position: absolute;
+  bottom: 10px;
+    right: 20px;
+    border-radius: 100px;
+   margin-right: 40PX;
+   margin-bottom:30px ;
+   width: 20%;
+        }
+        .image img{
+            height:200%;
+    position: absolute;
+  bottom: 10px;
+    right: 20px;
+    border-radius: 100px;
+   margin-right: -40PX;
+   margin-bottom:180px ;
+   width: 150%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <nav>
+        <h1>FlyHigh</h1>
+        <ul>
+            <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>flight</a></li>
+            <li><a href="#"><i class="fa fa-bus" aria-hidden="true"></i>Buses</a></li>
+            <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i>Cabs</a></li>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>villas and stays</a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+        </ul>
+    </nav>
+    <div class="image">
+       <img src="red.jpg">
+    </div>
+    <div class="plan">
+        <h2>make a plan</h2>
+        <div class="plann">
+            <input type="text" placeholder="city">
+            <input type="text" placeholder="departure">
+            <input type="text" placeholder="destination">
+            <input type="text" placeholder="arrival">
+            <input type="text" placeholder="returns">
+        </div>
+    </div>
+    
+  
+</section>
+</body>
+</html>
