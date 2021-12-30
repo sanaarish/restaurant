@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: url(phn.jpg);
+    /* background: #c8e8e9; */
+     repeat:no-repeat;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.TOP{
+    
+    margin-top: -550px;
+    margin-left: 600px;
+    line-height: 30px;
+    color: #007397;
+    font-weight: lighter;
+    
+}
+
+.container{
+    width: 80%;
+    background-image: url(se.jpg);
+    repeat:no-repeat;
+    background-size: cover;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5ox 10px rgba(0,0,0,0.2);
+    margin-left: -800px;
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .right-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin-top: 55px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content .right-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    background: #afafb6;
+}
+.content .right-side .details{
+margin: 14px;
+text-align: center;
+}
+.content .right-side .details i{
+    font-size: 30px;
+    color: #74b6e4;
+    margin-bottom: 10px;
+}
+.content .right-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .right-side.details .text-one
+.content .right-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+.container .content .left-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .left-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #007397;
+}
+.left-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin:12px 0;
+}
+.left-side .input-box input,
+.left-side .input-box textarea{
+    height: 100%;
+    width: 99%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f0f1f8;
+    font-weight: 500;
+    padding: 0 15px;
+    resize: none;
+}
+.left-side .message-box{
+    min-height: 110px;
+    margin-top: 10px;
+}
+.left-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.left-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #007397;
+    margin-left:270px ;
+}
+.button input[type="button"]:hover{
+    background: #5029bc;
+}
+@media (max-width:950px){
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+@media (max-width:820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+}

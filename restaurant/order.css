@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --red:#e84118;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* margin:0; padding:0; */
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.order{
+    min-height: 100vh;
+    /* background:url(che.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+  background-color: #fff;
+    padding-bottom: 2rem;
+}
+
+.order .heading span{
+    color:#702963;
+  margin-top: 280px;
+    font-size: 25px;
+    margin-left: 600px;
+   padding: 40px ;
+   top: 440px;
+}
+
+.order form{
+    border-radius: 2rem;
+    background:	#F3E5AB;
+    /* background-image: url(cre.jpg); */
+    width: 85%; background-size: cover;
+    background-position: center;
+    margin:2rem auto;
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem #000;
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.order form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.order form .inputBox input,
+.order form .inputBox select,
+.order form .inputBox textarea{
+    padding:0 1rem;
+    font-size: 1.7rem;
+    color:#333;
+    height:4rem;
+    width:49%;
+    margin:1rem 0;
+    border:.1rem solid #333;
+}
+
+.order form .inputBox input:focus,
+.order form .inputBox select:focus,
+.order form .inputBox textarea:focus{
+    border:.2rem solid var(--red);
+}
+
+.order form .inputBox textarea{
+    height:20rem;
+    padding:1rem;
+    resize: none;
+}
+
+.order form .inputBox #map{
+    height:20rem;
+    margin:1rem 0;
+    width: 49%;
+}
+
+.order form .btn{
+    color:var(#000);
+    border-color: var(#722F37);
+    outline-color: var(--red);
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+}
+
+.order form .btn:hover{
+    color:#fff;
+    background-color:#722F37 ;
+}
+
+
+
+
+@media (max-width:400px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header .header-1{
+        flex-flow: column;
+    }
+
+    header .header-1 .logo{
+        padding-bottom: 1rem;
+        
+    }
+
+    header .header-2 .navbar ul{
+        width: 100vw;
+    }
+
+    .order form{
+        width: 95%;
+    }
+
+}
