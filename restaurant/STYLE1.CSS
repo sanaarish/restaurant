@@ -97,23 +97,30 @@ header .header-1{
 }
 
 header .header-1 .logo {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     color:#666;
-    
+    font-family: Garamond, serif;
+    font-weight: bold;
+  
+   
 
   
 }
   h4{
-    margin-left: -950px;
+    margin-left: -850px;
     font-size: 40px;
    
-    
+    margin-top: 4px;
 }
 
 
-header .header-1 .call{
+
+header .header-1 .share .call{
     font-size: 2rem;
     color:#666;
+   
+    
+   
 }
 
 header .header-2{
@@ -150,12 +157,28 @@ header .header-2 .navbar ul li a:hover{
     color:#ff0;
 }
 
-header .header-2 .share a{
+header .header-1 .share a{
     font-size: 2rem;
-    color:#fff;
+    color:#ffff;
     margin:1rem;
+    width: 35px;
+      height: 35px;
+      cursor: pointer;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 10px;
+      vertical-align: middle;
+    background-color: #33383b;
+   
 }
-header .header-2 .share .btn1 {
+header .header-1 .share a:hover{
+    color: rgb(0, 217, 255);
+}
+
+header .header-2 .btn1 {
     position: absolute;
     top: 50%;
     right: 10%;
@@ -171,11 +194,11 @@ header .header-2 .share .btn1 {
     text-align: center;
     
   }
-  header .header-2 .share .btn1:hover{
+  header .header-2  .btn1:hover{
     background-color:#CCCCFF;
   }
 
-header .header-2 .share a:hover{
+header .header-2  a:hover{
     color:#ff0;
 }
 
@@ -208,11 +231,17 @@ header .header-2.header-active{
 .home .content{
     text-align: center;
     padding:1rem;
+    /* font-family: Tahoma, sans-serif; */
+    /* font-family: 'Courier New', monospace; */
+    /* font-family: Garamond, serif; */
+    font-family: Brush Script MT (cursive);
+    font-size:10rem ;
 }
 
 .home .content h3{
     font-size: 6rem;
     color:#566573 ;
+    font-family: Brush Script MT (cursive);
 }
 
 .home .content h3 span{
@@ -220,8 +249,8 @@ header .header-2.header-active{
 }
 
 .home .content p{
-    font-size: 2rem;
-    color:#FBEC5D ;
+    font-size: 3rem;
+    color:#4E342E ;
     width: 68rem;
     padding:1rem 0;
     font-weight: bold;
@@ -284,9 +313,10 @@ margin-top: 40px;
 
 .about .row .content p{
     font-size: 2.5rem;
-    color:#666;
+    /* color:#666; */
     padding:1rem 0;
     font-family: goudy-old-style;
+    color: #5F9EA0;
     font-style: italic;
     word-spacing: 7px;
     margin-top: 20px;
@@ -307,6 +337,11 @@ margin-top: 40px;
     margin-top: -200px;
     min-height:100vh ;
     overflow-x: hidden;
+    background-image: url(galg.jpg);
+    background-size: cover;
+  
+    position: relative;
+
     
 }
 h1{
@@ -359,6 +394,7 @@ img{
     object-fit: cover;
     padding: 10px;
     filter: drop-shadow(.5rem .5rem .5rem rgba(0,0,0,.3));
+    border-radius: 50%;
 }
 img:hover{
     
@@ -451,11 +487,13 @@ img:hover{
         font-size: 2rem;
         color:#333;
         padding:1rem 0;
+        font-family:sans-serif;
     }
     
     .feature .icons-container .icons p{
         font-size: 1.5rem;
         color:#666;
+        font-style: inherit;
     }
     
     @media (max-width:400px){

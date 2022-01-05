@@ -6,14 +6,15 @@ body{
     
     margin: 0;
     padding: 0;
-   background-image: url(fr.jpg);
+    background-color: #fff;
+   /* background-image: url(bl.jpg); */
     background-size: cover;
     font-family: sans-serif;
 }
 .log{
     width: 320px;
     height: 420px;
-    background: #51414F;
+    background: #EEDC82;
     color:#fff;
     top: 20%;
     left: 40%;
@@ -60,8 +61,16 @@ h1{
     border: none;
     outline: none;
     height: 40px;
-    background: #fb2525;
+    background: #9A2A2A;
     color: #fff;
     font-size: 18px;
     border-radius: 2;
+    width: 60%;
+    margin-left: 50px;
+    outline: #fff;
+    border: blanchedalmond;
+}
+.log input[type="submit"]:hover{
+    background-color:rgb(199, 74, 74);
+    color: #F0E68C;
 }
